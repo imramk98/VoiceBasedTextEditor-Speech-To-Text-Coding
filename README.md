@@ -3,8 +3,8 @@ How to Set Up:
 1. Make sure to have Python version 3.6 or higher
 
 2. Open command prompt and use the following commands: 
-		-"pip install speechrecogntion" 
-		-"pip install pyaudio"
+	-"pip install speechrecogntion" 
+	-"pip install pyaudio"
 
 3. Navigate to where 'voicebaedtexteditor.py' is stored via command prompt 
 
