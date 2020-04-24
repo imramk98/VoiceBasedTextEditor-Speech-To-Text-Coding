@@ -1,4 +1,4 @@
-How to Set Up:
+How to set up and get started:
 
 1. Make sure to have Python version 3.6 or higher
 

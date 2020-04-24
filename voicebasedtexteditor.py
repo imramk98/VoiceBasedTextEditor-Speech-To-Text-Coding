@@ -169,8 +169,9 @@ class VoiceBasedTextEditor:
         self.textarea.bind('<Control-Shift-S>', self.saveAs)
         self.textarea.bind('<Key>', self.statusbar.updateSaveStatus)
 
-
-        
+    ###
+    #Voice Recognition Funciton  
+    ###
     def activateVoiceRecogntion(self):
         self.statusbar.updateVoiceRecogStatus(True)
         r = sr.Recognizer()
@@ -350,17 +351,17 @@ class VoiceBasedTextEditor:
                     elif "stop" == command:
                         if stopEvent.is_set():
                             break
-                        
-##                else:
-##                    self.statusbar.updateStatus2
-##                    self.textarea.insert(tk.INSERT, command )
                     
                 except sr.UnknownValueError:
                     print('Sorry did not recognise that')
 
                 
             self.statusbar.updateVoiceRecogStatus(False)
-        
+
+            
+    ###
+    #Creates a thread for speech recognition function to run on 
+    ###
     def callBack(self):
         t1 = threading.Thread(target=self.activateVoiceRecogntion)
         t1.start()
