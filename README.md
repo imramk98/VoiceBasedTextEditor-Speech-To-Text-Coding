@@ -2,7 +2,7 @@ How to Set Up:
 
 1. Make sure to have Python version 3.6 or higher
 
-2. Open command prompt use the following commands: 
+2. Open command prompt and use the following commands: 
 		-"pip install speechrecogntion" 
 		-"pip install pyaudio"
 
